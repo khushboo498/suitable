@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>suitable</title>
+	<!-- viewport meta -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- fontawsome css -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+	<!-- bootstarp css -->
+	<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- jquery -->
+
+	<!-- jquery uncompressed -->
+	<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+
+<!-- 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script> -->
+
+</head>
+<body class="body-box">
+	<section class="popups">
+		<div id="demo-form">
+			<div class="inner-demo-form">
+				<p><a href="#javascript:void(0)" onclick="close()" class="anchor" id="close-demo"><i class="fas fa-times"></i></a></p>
+				<h6>Request a Demo</h6>
+				<!-- form part  -->
+				<form class="flex-space">
+					<ul class="list is-50">
+						<li>
+							<label for="fname">First Name</label>
+							<input type="text" name="fname" id="fname">
+						</li>
+						<li>
+							<label for="job">Job Title</label>
+							<input type="text" name="job" id="job">
+						</li>
+						<li>
+							<label for="pnumber">Phone</label>
+							<input type="number" name="pnumber" id="pnumber">
+						</li>
+					</ul>
+					<ul class="list is-50">
+						<li>
+							<label for="lname">Last Name</label>
+							<input type="text" name="lname" id="lname">
+						</li>
+						<li>
+							<label for="mail">Email</label>
+							<input type="email" name="mail" id="mail">
+						</li>
+						<li>
+							<label for="comname">Company Name</label>
+							<input type="text" name="comname" id="comname">
+						</li>
+					</ul>
+				</form>
+
+				<button type="submit" class="blue-button">
+					Submit
+				</button>
+			</div>
+		</div>
+		<!-- contact popup -->
+		<div id="contact-popup">
+			<div class="inner-contact-popup">
+				<div class="close">
+					<a href="#javascript:void(0)" id="close-popup"><i class="fas fa-times"></i></a>
+				</div>	
+				<h3>Contact Us</h3>
+				<form>
+					<ul class="list flex-wrap">
+						<li class="flex-column is-50">
+							<label for="firstname">First Name</label>
+							<input type="text" name="firstname" id="firstname">
+						</li>
+						<li class="flex-column is-50">
+							<label for="lastname">Last Name</label>
+							<input type="text" name="lastname" id="lastname">
+						</li>
+						<li class="flex-column is-50">
+							<label for="email">Email</label>
+							<input type="email" name="email" id="emailid">
+						</li>
+						<li class="flex-column is-50">
+							<label for="phoneno">Phone</label>
+							<input type="number" name="phoneno" id="phonenum">
+						</li>
+					</ul>
+
+					<label for="message" class="message">Message</label>
+					<input type="text" name="message" id="message">
+
+					<button type="submit" class="blue-button">
+						Submit
+					</button>
+				</form>
+			</div>
+		</div>		
+	</section>
+	<section class="header">
+		<div class="container">
+			<!-- this inner header is for bigscreen -->
+			<div class="inner-header-bigscreen flex-space">
+				<!-- left part -->
+				<div class="left flex-row">
+					<a href="#"><img src="./image/black-logo.png" class="is-110"></a>
+					<!-- resources dropdown -->
+					<div class="resources">
+						<a href="#" class="anchor">Resources</a>
+						<div class="re-content">
+							<ul class="list">
+								<li><a href="#" class="anchor-inner">Blog</a></li>
+								<li><a href="#" class="anchor-inner">Privacy</a></li>
+							</ul>
+							
+							
+						</div>
+					</div>
+					<a href="#" class="anchor">Case Studies</a>
+					<a href="#" class="anchor">FAQs</a>
+					<a href="#" class="anchor">About Us</a>
+				</div>
+				<!-- right part -->
+				<div class="right flex-row">
+					<a href="#" class="anchor">Login</a>
+					<!-- demo popup -->
+					<div class="demo-box">
+						<a href="#" onclick="requestDemo()" class="blue-button" id="demo-button">Request Demo</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="banner">
+		<div class="container">
+			<div class="inner-banner">
+				<div class="banner-profile-image">
+					<img src="./image/banner-shape.svg" class="banner-backimg">
+
+					<div class="profile-img-1">
+						<img src="./image/banner-image1.svg" class="img">
+					</div>
+					<div class="profile-img-2">
+						<img src="./image/banner-image2.svg" class="img">
+					</div>
+					<div class="profile-img-3">
+						<img src="./image/banner-image3.svg" class="img">
+					</div>
+					<div class="profile-img-4">
+						<img src="./image/banner-image4.svg" class="img">
+					</div>
+					<div class="profile-img-5">
+						<img src="./image/banner-image5.svg" class="img">
+					</div>
+					<div class="profile-img-6">
+						<img src="./image/banner-image6.svg" class="img">
+					</div>
+					<div class="profile-img-7">
+						<img src="./image/banner-image7.svg" class="img">
+					</div>
+				</div>
+				<div class="banne-heading1">
+					<h1 class="black-heading">Make Hiring</h1>
+					<div class="repeat-heading">
+						<h1 class="black-heading">Team Oriented</h1>
+						<h1 class="black-heading">People Led</h1>
+						<h1 class="black-heading">Engaging</h1>
+					</div>
+				</div>
+				<div class="banner-bottom">
+					<p>Leverage employee referrals and scout premium talent from employees' social and professional networks</p>
+					<div class="banner-links">
+						<a href="#" onclick="requestDemo()" class="blue-button" id="demo-button-banner">Request Demo</a>
+						<br>
+						<a href="#" class="v-link"><i class="fas fa-caret-right"></i> How it works</a>
+					</div>
+					
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="features">
+		<div class="container">
+			<div class="features-box flex-space">
+				<div class="suitable-image is-45">
+					<img src="./image/why-suitable.jpg" class="sticky-img">
+				</div>
+				<div class="why-suitable is-45">
+					<span><i class="fas fa-question"></i></span>
+					<h3 class="black-heading">Why Suitable ?</h3>
+					<ul class="list">
+						<li>
+							<!-- 1 -->
+							<i><img src="./image/talent.svg"></i>
+							<h6 class="black-heading-small top-margin">Access to Potential Talent</h6>
+							<p>Get introduced to best candidates from your employees’ networks and build premium talent pipeline</p>
+						</li>
+						<li>
+							<!-- 2 -->
+							<i><img src="./image/tracking.svg"></i>
+							<h6 class="black-heading-small top-margin">Automation and Tracking</h6>
+							<p>Suitable automates employee referrals and tracks candidate applications over the hiring process</p>
+						</li>
+						<li>
+							<!-- 3 -->
+							<i><img src="./image/gamification.svg"></i>
+							<h6 class="black-heading-small top-margin">Employee Engagement Gamified</h6>
+							<p>Engage your employees in the hiring process with magnetic gamification. Referrals with Suitable are easy and rewarding</p>
+						</li>
+						<li>
+							<!-- 4 -->
+							<i><img src="./image/future-hiring.svg"></i>
+							<h6 class="black-heading-small top-margin">Datapool for Future Hirings</h6>
+							<p>Never lose out on applicants with Suitable’s Datapool. Our AI automatically suggests potential candidates for active job vacancies</p>
+						</li>
+						<li>
+							<!-- 5 -->
+							<i><img src="./image/talent.svg"></i>
+							<h6 class="black-heading-small top-margin">AI Applicant Screening</h6>
+							<p>Find best candidates faster with Suitable AI based resume screening. Filter candidates by job match scores and more</p>
+						</li>
+						<li>
+							<!-- 6 -->
+							<i><img src="./image/talent.svg"></i>
+							<h6 class="black-heading-small top-margin">Application Funneling</h6>
+							<p>Increase hiring efficiency by managing all applications at one place. We integrate with your current ATS to provide a seamless recruitment experience</p>
+						</li>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="growthpart">
+		<div class="container">
+			<div class="referrals-header">
+				<span><i class="fas fa-question"></i></span>
+				<h5 class="white-heading">Why Employee Referrals</h5>
+			</div>
+			<div class="referrals-inner flex-space">
+				<div class="employee is-30">
+					<h2 class="white-heading-no">
+						<span class='numscroller' data-min='1' data-max='88' data-delay='5' data-increment='10'>88</span>% 
+					</h2>
+					<h6 class="white-heading-small">Employers Validation</h6>
+					<p>88% of employers said that referrals are the #1 best source for above-average applicants</p>
+				</div>
+				<div class="employee is-30">
+					<h2 class="white-heading-no">
+						<span class='numscroller' data-min='1' data-max='55' data-delay='5' data-increment='10'>55</span>% 
+					</h2>
+					<h6 class="white-heading-small">Faster Hiring</h6>
+					<p>Applicants hired through a referral are hired 55% faster than those who come through career sites</p>
+
+				</div>
+				<div class="employee is-30">
+					<h2 class="white-heading-no">
+						<span class='numscroller' data-min='1' data-max='45' data-delay='5' data-increment='10'>45</span>% 
+					</h2>
+					<h6 class="white-heading-small">Higher Retention</h6>
+					<p>Employee referrals have 45% retention after two years compared to 20% from job boards</p>
+
+				</div>
+			</div>
+			<div class="employee-video">
+				<iframe id="video" title="youtube-video" src="https://www.youtube.com/embed/dHz8qMOV3xY"></iframe>
+			</div>
+			<div class="employee-video-content">
+				<span><i class="fas fa-question"></i></span>
+				<h2 class="white-heading">Bonus Tip !</h2>
+				<p>Employees are 8x more likely to refer, if it involves less than 3 steps and motivating rewards. Suitable Reward Platform takes care of that !</p>
+			</div>
+		</div>
+	</section>
+	<section class="comments">
+		<div class="container">
+			<div class="comm-header">
+				<h5 class="black-heading">They love us. You will too.</h5>
+				<p>Referrals Work!</p>
+				<p>See how our clients have improved quality and retention of hired talent through Suitable</p>
+			</div>
+			<div class="comment-box">
+				<div class="com-xencov">
+					<img src="./image/xencov.svg">
+				</div>
+				<div class="com-alfin">
+					<img src="./image/quote-icon.svg">
+					<p>Using Suitable, we were able to <span>actively scout potential talent</span> and not just rely on employees for referral. It acted as a additional source of talent pool for us”</p>
+					<h6 class="black-heading-small">Alfin Babu, Business Head</h6>
+				</div>
+				<div class="com-dine">
+					Dineout
+				</div>
+				<div class="com-nikhil">
+					<img src="./image/quote-icon.svg">
+					<p>"I can easily search for candidates that are qualified for the roles I am hiring for <span>, ping the referrer to receive an intro,	</span> and then quickly connect with the candidate</p>
+					<h6 class="black-heading-small">Nikhil Bakshi, Cofounder</h6>
+				</div>
+				<div class="read-case">
+					<a href="#" class="anchor"><i class="fas fa-play"></i> Read our Customers Case Studies</a>
+				</div>
+			</div>
+		</div>
+	</section>
+	<section class="requstdemo">
+		<div class="container">
+			<h5 class="black-heading">Get Started with <span>Suitable</span></h5>
+			<p>Automate employee referrals with Suitable and connect with
+			potential candidates from employees' social and professional networks</p>
+			<div class="connect-demobox">
+				<div class="container">
+					<h6 class="black-heading">Let's Connect!</h6>
+					<p>Onboard employees and get free access to premium talent.</p>
+					<!-- demo popup -->
+					<div class="demo-box">
+						<a href="#" onclick="requestDemo()" class="blue-button" id="demo-button-request">Request Demo</a>
+					</div>
+				</div>
+			</div>		
+		</div>
+	</section>
+	<section class="footer">
+		<div class="container">	
+			<div class="inner-footer-upper flex-space">
+				<div class="first is-30">
+					<a href="#javascript:void(0)">
+						<img src="./image/white-logo.png">
+					</a>
+					<p>Suitable makes it easier for recruiters to connect with potential talent from their employees social and professional networks.</p>
+				</div>
+				<div class="second is-30">
+					<h6>Get In Touch</h6>
+					<ul class="list">
+						<li><a href="mailto:hello@suitable.ai"><i class="fas fa-envelope"></i> hello@suuitable.ai</a></li>
+						<li><a href="tel:9769781329"> <i class="fas fa-phone-alt"></i> (+9<sup>1</sup>)97<sup>6</sup>97 <sup>8<sub>1</sub></sup>3<sup>2</sup>9</a></li>
+						<li><i class="fas fa-map-marker-alt"></i> B-1 / H-3, Mohan Estate, Mathura Road, New Delhi- 110044</li>
+					</ul>
+				</div>
+				<div class="third is-30">
+					<h6 >Get Started with Suitable Today</h6>
+					<div class="contact-button">
+						<a href="#javascript:void(0)" onclick="contactUs()" class="blue-button" id="contact-button">Contact Us</a>
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class="inner-footer-lower">
+			<div class="container">
+				<div class="inner-footer-copyright  flex-space">
+					<div class="first">
+						<p>Copyright © 2021 Suitable</p>
+					</div>
+					<div class="second">
+						<a href="https://www.linkedin.com/company/suitable-ai/"><i class="fab fa-linkedin-in"></i></a>
+						<a href="https://www.youtube.com/channel/UCED1YI_nBWT66NTTd_avN_w"><i class="fab fa-youtube"></i></a>
+					</div>
+					<div class="third">
+						<a href="#javascript:void(0)">Privacy Policy</a>
+						<a href="#javascript:void(0)">Terms & Conditions</a>
+					</div>
+				</div>
+			</div>	
+		</div>
+	</section>
+
+	
+
+	<!-- bootstrap javascript -->
+	<!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-gtEjrD/SeCtmISkJkNUaaKMoLD0//ElJ19smozuHV6z3Iehds+3Ulb9Bn9Plx0x4" crossorigin="anonymous"></script> -->
+	<script src="script.js"></script>
+</body>
+</html>
